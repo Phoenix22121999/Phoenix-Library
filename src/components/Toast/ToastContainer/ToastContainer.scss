@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.phoenix-toast-container {
+	position: fixed;
+	height: max-content;
+	max-height: 100vh;
+	transition: height 500ms;
+	user-select: none;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	width: 320px;
+	// overflow: hidden;
+	padding: 12px;
+	// display: flex;
+	// justify-content: flex-start;
+	z-index: 999;
+	&[class$="-left"] {
+		left: 0px;
+	}
+	&[class$="-center"] {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	&[class$="-right"] {
+		right: 0px;
+	}
+	&[class*="top-"] {
+		top: 0px;
+		flex-direction: column;
+		.phoenix-toast-item-warpper {
+			margin-bottom: 10px;
+		}
+	}
+	&[class*="bottom-"] {
+		bottom: 0px;
+		flex-direction: column-reverse;
+		.phoenix-toast-item-warpper {
+			margin-top: 10px;
+		}
+	}
+}

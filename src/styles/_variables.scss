@@ -1,0 +1,131 @@
+$info-color: #009eff;
+$error-color: #dc3535;
+$warning-color: #ffbf00;
+$success-color: #54b435;
+$dark-color: #212121;
+$light-color: #fff;
+$gradient-color: linear-gradient(
+	102.4deg,
+	rgba(253, 189, 85, 1) 7.8%,
+	rgba(249, 131, 255, 1) 100.3%
+);
+
+$mobile-only: "screen and (max-width: 480px)";
+$tablet: "screen and (min-width: 642px)";
+$xtablet: "screen and (min-width: 726px)";
+$lap: "screen and (min-width: 1008px)";
+$desk: "screen and (min-width: 1024px)";
+$widescreen: "screen and (min-width: 1240px)";
+$xl: "screen and (min-width: 1440px)";
+$xxl: "screen and (min-width: 1536px)";
+
+@mixin text-xs {
+	font-size: 12px; /* 12px */
+	line-height: 16px; /* 16px */
+}
+@mixin text-sm {
+	font-size: 14px; /* 14px */
+	line-height: 20px; /* 20px */
+}
+@mixin text-base {
+	font-size: 16px; /* 16px */
+	line-height: 24px; /* 24px */
+}
+@mixin text-lg {
+	font-size: 18px; /* 18px */
+	line-height: 28px; /* 28px */
+}
+@mixin text-xl {
+	font-size: 20px; /* 20px */
+	line-height: 28px; /* 28px */
+}
+@mixin text-2xl {
+	font-size: 24px; /* 24px */
+	line-height: 32px; /* 32px */
+}
+@mixin text-3xl {
+	font-size: 30px; /* 30px */
+	line-height: 36px; /* 36px */
+}
+@mixin text-4xl {
+	font-size: 36px; /* 36px */
+	line-height: 40px; /* 40px */
+}
+@mixin text-5xl {
+	font-size: 48px; /* 48px */
+	line-height: 1.2;
+}
+@mixin text-6xl {
+	font-size: 60px; /* 60px */
+	line-height: 1;
+}
+@mixin text-7xl {
+	font-size: 72px; /* 72px */
+	line-height: 1;
+}
+@mixin text-8xl {
+	font-size: 96px; /* 96px */
+	line-height: 1;
+}
+@mixin text-9xl {
+	font-size: 128px; /* 128px */
+	line-height: 1;
+}
+
+@mixin border-bottom-radius-md {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+@mixin border-top-radius-md {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+@mixin border-radius-md {
+	border-radius: 5px;
+}
+
+@mixin border-radius-xsm {
+	border-radius: 0.5px;
+}
+
+@mixin border-radius-sm {
+	border-radius: 1px;
+}
+
+@mixin mq($alias) {
+	@if $alias == "tablet" {
+		@media screen and (min-width: 641px) {
+			@content;
+		}
+	} @else if $alias == "lap" {
+		@media screen and (min-width: 1008px) {
+			@content;
+		}
+	} @else if $alias == "xtablet" {
+		@media screen and (min-width: 726px) {
+			@content;
+		}
+	} @else if $alias == "desk" {
+		@media screen and (min-width: 1024px) {
+			@content;
+		}
+	} @else if $alias == "widescreen" {
+		@media screen and (min-width: 1240px) {
+			@content;
+		}
+	} @else if $alias == "mobile-only" {
+		@media screen and (max-width: 480px) {
+			@content;
+		}
+	} @else if $alias == "xl" {
+		@media screen and (min-width: 1440px) {
+			@content;
+		}
+	} @else if $alias == "xxl" {
+		@media screen and (min-width: 1536px) {
+			@content;
+		}
+	}
+}
