@@ -27,6 +27,18 @@ export default defineConfig({
 				find: "@cores",
 				replacement: path.resolve(__dirname, "src/cores"),
 			},
+			{
+				find: "@contexts",
+				replacement: path.resolve(__dirname, "src/contexts"),
+			},
+			{
+				find: "@icons",
+				replacement: path.resolve(__dirname, "src/icons"),
+			},
+			{
+				find: "@themes",
+				replacement: path.resolve(__dirname, "src/themes"),
+			},
 		],
 	},
 	server: {

@@ -1,0 +1,38 @@
+@use "../../../styles/variables" as v;
+.phoenix-menu-dropdown {
+	position: absolute;
+	top: 0%;
+	left: 100%;
+	opacity: 0;
+	background-color: v.$light-color;
+	&.is-first {
+		top: 100%;
+		left: 0;
+	}
+}
+
+.phoenix-menu-dropdown-transition-enter {
+	opacity: 0;
+	transform: translateY(10px);
+}
+.phoenix-menu-dropdown-transition-enter-active {
+	opacity: 1;
+	transform: translateY(0);
+	transition: all 300ms;
+}
+.phoenix-menu-dropdown-transition-enter-done {
+	opacity: 1;
+	transform: translateX(0);
+}
+.phoenix-menu-dropdown-transition-exit {
+	opacity: 1;
+}
+.phoenix-menu-dropdown-transition-exit-active {
+	opacity: 0;
+	transform: translateY(10px);
+	transition: all 300ms;
+}
+
+li {
+	list-style-type: none;
+}

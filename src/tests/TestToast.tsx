@@ -6,6 +6,7 @@ import {
 	ToastTheme,
 	ToastType,
 } from "../types/Toast/type";
+import { ToastContainer } from "@src/components";
 
 function TestToast() {
 	const [count, setCount] = useState(0);
@@ -161,6 +162,7 @@ function TestToast() {
 					promise
 				</button>
 			</div>
+			<ToastContainer position="top-left" />
 		</div>
 	);
 }

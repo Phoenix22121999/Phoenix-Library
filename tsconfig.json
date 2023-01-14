@@ -24,7 +24,10 @@
 			"@hooks/*": ["./src/hooks/*"],
 			"@utils/*": ["./src/utils/*"],
 			"@types/*": ["./src/types/*"],
-			"@cores/*": ["./src/cores/*"]
+			"@cores/*": ["./src/cores/*"],
+			"@themes/*": ["./src/themes/*"],
+			"@icons/*": ["./src/icons/*"],
+			"@contexts/*": ["./src/contexts/*"]
 		}
 	},
 	"include": ["src"],

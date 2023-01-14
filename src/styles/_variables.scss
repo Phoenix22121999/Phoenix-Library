@@ -1,9 +1,15 @@
-$info-color: #009eff;
-$error-color: #dc3535;
-$warning-color: #ffbf00;
-$success-color: #54b435;
-$dark-color: #212121;
-$light-color: #fff;
+// $info-color: #009eff;
+// $error-color: #dc3535;
+// $warning-color: #ffbf00;
+// $success-color: #54b435;
+// $dark-color: #212121;
+// $light-color: #fff;
+$info-color: var(--infoColor);
+$error-color: var(--errorColor);
+$warning-color: var(--warningColor);
+$success-color: var(--successColor);
+$dark-color: var(--darkColor);
+$light-color: var(--lightColor);
 $gradient-color: linear-gradient(
 	102.4deg,
 	rgba(253, 189, 85, 1) 7.8%,

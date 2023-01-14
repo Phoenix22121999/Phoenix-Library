@@ -1,0 +1,13 @@
+@use "../../../styles/variables" as v;
+.phoenix-menu {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: v.$light-color;
+	&-horizontal {
+		flex-direction: row;
+	}
+	&-vertical {
+		flex-direction: column;
+	}
+}

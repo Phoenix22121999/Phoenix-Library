@@ -1,0 +1,10 @@
+@use "../../../styles/variables" as v;
+.phoenix-menu-item {
+	padding: 20px 10px;
+	cursor: pointer;
+	position: relative;
+	@include v.text-base;
+	.phoenix-menu-item-label-disable {
+		color: #8b7e74;
+	}
+}
